@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Dark theme with purple accents */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Dark Portfolio Theme */
+    --portfolio-dark: 230 15% 13%; /* rgb(25, 25, 36) */
+    --portfolio-darker: 230 15% 8%; /* rgb(23, 23, 33) */
+    --portfolio-darkest: 225 18% 13%; /* rgb(32, 32, 45) */
+    
+    /* Purple accent system */
+    --portfolio-primary: 267 76% 60%; /* rgb(133, 76, 230) */
+    --portfolio-primary-glow: 267 76% 70%;
+    --portfolio-pink: 310 95% 53%; /* rgb(218, 11, 159) */
+    --portfolio-blue: 214 100% 41%; /* rgb(0, 70, 209) */
+    
+    /* Text colors */
+    --portfolio-text-primary: 0 0% 95%; /* rgb(242, 243, 244) */
+    --portfolio-text-secondary: 0 0% 70%; /* rgb(177, 178, 179) */
+    --portfolio-text-muted: 0 0% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-primary)), hsl(var(--portfolio-pink)));
+    --gradient-subtle: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+    --gradient-card: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    
+    /* Shadows and effects */
+    --shadow-portfolio: 0 4px 24px rgba(23, 92, 230, 0.15);
+    --shadow-portfolio-lg: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    --shadow-portfolio-glow: 0 0 40px hsl(var(--portfolio-primary) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s ease-in-out;
+
+    /* Base shadcn colors for compatibility */
+    --background: var(--portfolio-darkest);
+    --foreground: var(--portfolio-text-primary);
+    --card: var(--portfolio-darker);
+    --card-foreground: var(--portfolio-text-primary);
+    --popover: var(--portfolio-darker);
+    --popover-foreground: var(--portfolio-text-primary);
+    --primary: var(--portfolio-primary);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--portfolio-dark);
+    --secondary-foreground: var(--portfolio-text-primary);
+    --muted: var(--portfolio-dark);
+    --muted-foreground: var(--portfolio-text-secondary);
+    --accent: var(--portfolio-primary);
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: var(--portfolio-primary);
+    --input: var(--portfolio-darker);
+    --ring: var(--portfolio-primary);
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
