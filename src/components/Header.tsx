@@ -114,11 +114,10 @@ const Header = () => {
             </a>
             
 
-            <Button variant="default" size="sm" 
-            className="self-start">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </Button>
+            <Button className="w-16 h-8">
+            <a href="https://github.com/imvikas31" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 font-medium">Github
+            </a>
+          </Button>
           </nav>
         )}
       </div>

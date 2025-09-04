@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-portfolio-darkest border-t border-primary/20">
+    <footer className="w-full bg-portfolio-darkest border-t border-primary/20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -19,16 +19,20 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="sm" className="p-2">
-                <Github className="w-5 h-5" />
+                <a href="https://github.com/imvikas31/Vikas-PersonalWebsite"><Github className="w-5 h-5" /></a>
+                
               </Button>
               <Button variant="ghost" size="sm" className="p-2">
-                <Linkedin className="w-5 h-5" />
+                <a href="https://www.linkedin.com/in/imvikas28"><Linkedin className="w-5 h-5" /></a>
+                
               </Button>
               <Button variant="ghost" size="sm" className="p-2">
-                <Twitter className="w-5 h-5" />
+                <a href="https://x.com/imvikas0331"><Twitter className="w-5 h-5" /></a>
+                
               </Button>
               <Button variant="ghost" size="sm" className="p-2">
-                <Mail className="w-5 h-5" />
+                <a href="mailto:vikas.careerone@gmail.com"><Mail className="w-5 h-5" /></a>
+                
               </Button>
             </div>
           </div>
@@ -79,17 +83,17 @@ const Footer = () => {
             </h4>
             <div className="space-y-2">
               <p className="text-muted-foreground text-sm">
-                vikas@example.com
+                vikas.careerone@gmail.com
               </p>
               <p className="text-muted-foreground text-sm">
-                +91 98765 43210
+                +91 9336021325
               </p>
               <p className="text-muted-foreground text-sm">
                 India
               </p>
             </div>
             <Button variant="outline" size="sm" className="mt-4" asChild>
-              <a href="#contact">Hire Me</a>
+              <a href="https://drive.google.com/file/d/1z9hVI_t6XsEcYyBPz3ZrSkSAu2S9X4Rq/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hire me</a>
             </Button>
           </div>
         </div>
@@ -97,10 +101,10 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-primary/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            © {currentYear} Vikas Portfolio. All rights reserved.
+            © {currentYear} || Vikas Singh || Portfolio || All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by Vikas
+            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by Vikas Singh
           </p>
         </div>
       </div>

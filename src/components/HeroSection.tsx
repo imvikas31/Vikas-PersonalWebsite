@@ -49,9 +49,9 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-start">
-            <a href="/a"></a>
             <Button variant="resume" size="lg">
-              Download Resume
+            <a href="https://drive.google.com/file/d/1z9hVI_t6XsEcYyBPz3ZrSkSAu2S9X4Rq/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
+              
             </Button>
           </div>
         </div>

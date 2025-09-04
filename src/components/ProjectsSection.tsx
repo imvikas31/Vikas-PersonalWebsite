@@ -10,7 +10,7 @@ const projects = [
     technologies: ["React", "Node.js", "PostgreSQL"],
     duration: "3 months",
     description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics dashboard.",
-    image: "🛍️",
+    image: "./src/assets/pastebin.png",
     bgColor: "from-blue-500 to-purple-600"
   },
   {
@@ -118,7 +118,8 @@ const ProjectsSection = () => {
             >
               {/* Project Image/Icon */}
               <div className={`h-48 bg-gradient-to-br ${project.bgColor} flex items-center justify-center text-6xl`}>
-                {project.image}
+                <img src={project.image} alt="" className="h-[200px] w-[700px]"/>
+                
               </div>
 
               {/* Project Content */}

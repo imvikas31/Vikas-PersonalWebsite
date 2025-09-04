@@ -15,44 +15,67 @@ const skills = [
     icon: <Code className="w-8 h-8" />,
     technologies: [
       { name: "React", icon: "⚛️" },
+      { name: "JavaScript", icon: "📱" },
       { name: "TypeScript", icon: "🔷" },
       { name: "Next.js", icon: "▲" },
       { name: "Tailwind CSS", icon: "🎨" },
-      { name: "Vue.js", icon: "💚" }
     ]
   },
+ 
   {
     title: "Backend Development",
     icon: <Database className="w-8 h-8" />,
     technologies: [
       { name: "Node.js", icon: "🟢" },
       { name: "Python", icon: "🐍" },
-      { name: "PostgreSQL", icon: "🐘" },
+      { name: "Express", icon: "🔄" },
       { name: "MongoDB", icon: "🍃" },
       { name: "GraphQL", icon: "🔗" }
     ]
   },
-  {
-    title: "Mobile Development",
-    icon: <Smartphone className="w-8 h-8" />,
+   {
+    title: "Programming Languages",
+    icon: "🖥️",
     technologies: [
-      { name: "React Native", icon: "📱" },
-      { name: "Flutter", icon: "🦋" },
-      { name: "iOS", icon: "🍎" },
-      { name: "Android", icon: "🤖" }
+      { name: "C", icon: "🟢" },
+      { name:"C++", icon: "🐍" },
+      { name: "Java", icon: "🔄" },
+      { name: "JavaScript", icon: "🍃" },
+      { name: "Python", icon: "🔗" }
     ]
   },
   {
-    title: "Cloud & DevOps",
-    icon: <Cloud className="w-8 h-8" />,
+    title: "Core Computer Science",
+    icon: "🖥️",
     technologies: [
-      { name: "AWS", icon: "☁️" },
-      { name: "Docker", icon: "🐳" },
-      { name: "Kubernetes", icon: "⚓" },
-      { name: "CI/CD", icon: "🔄" },
-      { name: "Terraform", icon: "🏗️" }
+      { name: "Data Structures", icon: "🟢" },
+      { name:"Operating Systems (OS)", icon: "🐍" },
+      { name: "Database Management System (DBMS)", icon: "🔄" },
+      { name: "Object-Oriented Programming (OOP)", icon: "🍃" },
+      { name: "Computer Network", icon: "🔗" }
     ]
-  }
+  },
+  // {
+  //   title: "Mobile Development",
+  //   icon: <Smartphone className="w-8 h-8" />,
+  //   technologies: [
+  //     { name: "React Native", icon: "📱" },
+  //     { name: "Flutter", icon: "🦋" },
+  //     { name: "iOS", icon: "🍎" },
+  //     { name: "Android", icon: "🤖" }
+  //   ]
+  // },
+  // {
+  //   title: "Cloud & DevOps",
+  //   icon: <Cloud className="w-8 h-8" />,
+  //   technologies: [
+  //     { name: "AWS", icon: "☁️" },
+  //     { name: "Docker", icon: "🐳" },
+  //     { name: "Kubernetes", icon: "⚓" },
+  //     { name: "CI/CD", icon: "🔄" },
+  //     { name: "Terraform", icon: "🏗️" }
+  //   ]
+  // }
 ];
 
 const SkillsSection = () => {

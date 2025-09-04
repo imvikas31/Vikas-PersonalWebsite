@@ -1,4 +1,5 @@
 import { Building, Calendar, MapPin } from "lucide-react";
+import { Button } from "./ui/button";
 
 const experiences = [
   {
@@ -32,25 +33,67 @@ const experiences = [
 
 const certifications = [
   {
-    name: "AWS Solutions Architect",
-    issuer: "Amazon Web Services",
-    logo: "☁️",
-    date: "Dec 2023",
-    credentialId: "AWS-SA-2023-001"
+    name: "Introduction to Networking for Cyber Professionals",
+    issuer: "Zscaler",
+    logo: "./src/assets/zscaler_logo.jpeg",
+    date: "Issued Aug 2024",
+    credentialId: "https://verify.skilljar.com/c/ohx5bxwqsyei"
   },
   {
-    name: "React Professional Certificate",
-    issuer: "Meta",
-    logo: "⚛️",
-    date: "Sep 2023",
-    credentialId: "META-REACT-2023"
+    name: "Artificial Intelligence Fundamentals",
+    issuer: "IBM",
+    logo: "./src/assets/ibm_logo.jpeg",
+    date: "Issued Dec 2023",
+    credentialId: "https://www.credly.com/badges/86d2e16d-2511-4f6a-9cf2-1c468e4a8d02/linked_in_profile"
   },
   {
-    name: "Google Cloud Professional",
-    issuer: "Google Cloud",
-    logo: "🌤️",
-    date: "Jun 2023",
-    credentialId: "GCP-PRO-2023-001"
+    name: "AI-ML Virtual internship",
+    issuer: "AICTE NEAT",
+    logo:"./src/assets/aicte_neat_cell_logo.jpeg",
+    date: "Issued July 2023",
+    credentialId: "https://drive.google.com/file/d/18Pxmly8FxR1DOjuxl1KthpKXDZ8lm8iw/view?usp=drive_link"
+  },
+  {
+    name: "AWS Academy Cloud Foundations",
+    issuer: "AWS",
+    logo: "./src/assets/amazon_web_services_logo.jpeg",
+    date: "Issued July 2023",
+    credentialId: "https://www.credly.com/badges/0e490957-8b5f-4087-ba1b-da819da2e505/linked_in_profile"
+  },
+  {
+    name: "Cybersecurity VIrtual Internship Program",
+    issuer: "AICTE NEAT",
+    logo: "./src/assets/aicte_neat_cell_logo.jpeg",
+    date: "Issued July 2023",
+    credentialId: "https://drive.google.com/file/d/18hBXqXiv0yHFz8Ro6UIHQIcZLwTUrgI0/view?usp=drive_link"
+  },
+  {
+    name: "Data Analysis Using Python",
+    issuer: "IBM",
+    logo: "./src/assets/zscaler_logo.jpeg",
+    date: "Issued July 2023",
+    credentialId: "https://www.credly.com/badges/15730de4-0ac4-4800-a49d-c5897df4fc3a/linked_in_profile"
+  },
+  {
+    name: "AWS Academy Machine Learning Foundations",
+    issuer: "AWS",
+    logo: "./src/assets/amazon_web_services_logo.jpeg",
+    date: "Issued April 2023",
+    credentialId: "https://www.credly.com/badges/18b50b30-5d13-4ce3-8c1d-7e7666bfd5de/linked_in_profile"
+  },
+  {
+    name: "Fundamentals of Network Security ",
+    issuer: "Palo Alto Networks",
+    logo: "./src/assets/palo_alto_networks_logo.jpeg",
+    date: "Issued April 2023",
+    credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
+  },
+  {
+    name: "Introduction to Cybersecurity",
+    issuer: "AWPalo Alto NetworksS",
+     logo: "./src/assets/palo_alto_networks_logo.jpeg",
+    date: "Issued April 2023",
+    credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
   }
 ];
 
@@ -68,29 +111,29 @@ const ExperienceSection = () => {
 
         
           <div className="mb-20">
-            <div className="text-center mb-16">
+            {/* <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-semibold text-portfolio-text-primary mb-4">
                 Work Experience
               </h2>
               <p className="text-lg text-portfolio-text-secondary max-w-2xl mx-auto">
                 My professional journey building innovative solutions and leading development teams.
               </p>
-            </div>
+            </div> */}
 
             {/* Experience Timeline */}
-            <div className="space-y-8">
+            {/* <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="flex flex-col md:flex-row gap-6">
+                <div key={index} className="flex flex-col md:flex-row gap-6"> */}
                   {/* Timeline Connector */}
-                  <div className="hidden md:flex flex-col items-center">
+                  {/* <div className="hidden md:flex flex-col items-center">
                     <div className="w-4 h-4 bg-portfolio-primary rounded-full shadow-portfolio-glow" />
                     {index < experiences.length - 1 && (
                       <div className="w-1 h-40 bg-portfolio-primary/30 mt-2" />
                     )}
-                  </div>
+                  </div> */}
 
                   {/* Experience Card */}
-                  <div className="flex-1 bg-portfolio-darker border border-portfolio-primary/20 rounded-2xl p-6 shadow-portfolio hover:shadow-portfolio-lg transition-all duration-300">
+                  {/* <div className="flex-1 bg-portfolio-darker border border-portfolio-primary/20 rounded-2xl p-6 shadow-portfolio hover:shadow-portfolio-lg transition-all duration-300">
                     <div className="flex items-start gap-4 mb-4">
                       <div className="text-4xl">{exp.logo}</div>
                       <div className="flex-1">
@@ -128,10 +171,10 @@ const ExperienceSection = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  </div> */}
+                {/* </div> */}
+              {/* ))} */}
+            {/* </div> */}
           </div>
         
 
@@ -152,13 +195,22 @@ const ExperienceSection = () => {
                 key={index}
                 className="bg-portfolio-darker border border-portfolio-primary/20 rounded-2xl p-6 shadow-portfolio hover:shadow-portfolio-lg transition-all duration-300 text-center"
               >
-                <div className="text-4xl mb-4">{cert.logo}</div>
+                <div className="flex justify-center text-4xl mb-4">
+                  <img src={cert.logo} alt={cert.issuer} className="h-16 w-16 object-contain rounded-md"/>
+                  </div>
                 <h3 className="text-lg font-semibold text-portfolio-text-primary mb-2">
                   {cert.name}
                 </h3>
                 <p className="text-portfolio-text-secondary mb-2">{cert.issuer}</p>
                 <p className="text-portfolio-text-muted text-sm mb-1">{cert.date}</p>
-                <p className="text-portfolio-text-muted text-xs">{cert.credentialId}</p>
+                {/* <p className="text-portfolio-text-muted text-xs"></p> */}
+                 {cert.credentialId && (
+                  <a href={cert.credentialId} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="text-sm">
+                      show credential
+                    </Button>
+                  </a>
+                )}
               </div>
             ))}
           </div>

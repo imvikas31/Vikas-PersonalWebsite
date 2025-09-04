@@ -127,7 +127,7 @@ const ContactSection = () => {
 
                 {/* Twitter Button */}
                 <Button variant="outline" size="sm" className="flex-1">
-                  <a href="https://www.twitter.com/in/imvikas28" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/imvikas0331" target="_blank" rel="noopener noreferrer">
                     Twitter
                   </a>
                 </Button>
