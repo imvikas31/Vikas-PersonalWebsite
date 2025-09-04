@@ -81,20 +81,20 @@ const certifications = [
     date: "Issued April 2023",
     credentialId: "https://www.credly.com/badges/18b50b30-5d13-4ce3-8c1d-7e7666bfd5de/linked_in_profile"
   },
-  {
-    name: "Fundamentals of Network Security ",
-    issuer: "Palo Alto Networks",
-    logo: "./src/assets/palo_alto_networks_logo.jpeg",
-    date: "Issued April 2023",
-    credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
-  },
-  {
-    name: "Introduction to Cybersecurity",
-    issuer: "AWPalo Alto NetworksS",
-     logo: "./src/assets/palo_alto_networks_logo.jpeg",
-    date: "Issued April 2023",
-    credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
-  }
+  // {
+  //   name: "Fundamentals of Network Security ",
+  //   issuer: "Palo Alto Networks",
+  //   logo: "./src/assets/palo_alto_networks_logo.jpeg",
+  //   date: "Issued April 2023",
+  //   credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
+  // },
+  // {
+  //   name: "Introduction to Cybersecurity",
+  //   issuer: "AWPalo Alto NetworksS",
+  //    logo: "./src/assets/palo_alto_networks_logo.jpeg",
+  //   date: "Issued April 2023",
+  //   credentialId: "beacon.paloaltonetworks.com/profiles/vikassingh00c5ebdd"
+  // }
 ];
 
 const ExperienceSection = () => {

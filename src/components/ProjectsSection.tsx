@@ -5,33 +5,39 @@ import { Button } from "./ui/button";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Smart PasteBin",
     category: "web-app",
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    duration: "3 months",
-    description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics dashboard.",
+    technologies: ["React", "Node.js", "Superbase"],
+    duration: "2 weeks",
+    description: "A web-based Pastebin application that allows users to create, save, and share text snippets securely. It features a clean interface with easy access to pastes and optional privacy settings.",
     image: "./src/assets/pastebin.png",
-    bgColor: "from-blue-500 to-purple-600"
+    bgColor: "from-blue-500 to-purple-600",
+    demoLink: "https://vikas-pastebin.netlify.app",
+    repoLink: "https://github.com/imvikas31/PasteBin"
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Quiz Master",
     category: "web-app",
-    technologies: ["Vue.js", "Firebase", "PWA"],
-    duration: "2 months",
-    description: "Progressive web application for team collaboration with real-time updates, file sharing, and project tracking capabilities.",
+    technologies: ["React.js", "Node.js", "javaScript"],
+    duration: "2 week",
+    description: "A responsive React-based Quiz App that lets users test their knowledge across multiple topics. Features include interactive questions, score tracking, and smooth navigation between quizzes.",
     image: "📋",
-    bgColor: "from-green-500 to-teal-600"
+    bgColor: "from-green-500 to-teal-600",
+    demoLink:"https://todaypay-quizapp.netlify.app/",
+    repoLink:"https://github.com/imvikas31/TodayPay-QuizApp"
   },
   {
     id: 3,
-    title: "Weather Mobile App",
-    category: "android-app",
-    technologies: ["React Native", "API", "Maps"],
+    title: "A2Z BookSDekho",
+    category: "web-app",
+    technologies: ["React.js","JavaScript","Node.js"],
     duration: "6 weeks",
-    description: "Cross-platform weather application with location-based forecasts, interactive maps, and weather alerts notification system.",
+    description: "A2Z Bookshop is a user-friendly web app that allows users to browse, search, and purchase books seamlessly. It offers a streamlined interface with categories, book details, and a secure checkout process.",
     image: "🌤️",
-    bgColor: "from-orange-500 to-red-600"
+    bgColor: "from-orange-500 to-red-600",
+    demoLink:"https://a2zbookshop.netlify.app/",
+    repoLink:"https://github.com/imvikas31/A2Z-BookDekho-website"
   },
   {
     id: 4,
@@ -154,11 +160,15 @@ const ProjectsSection = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button variant="outline" size="sm" className="flex-1" 
+                  onClick={() => window.open(project.demoLink, "_blank")}
+                  >
                     <ExternalLink className="w-4 h-4 mr-1" />
                     Demo
                   </Button>
-                  <Button variant="ghost" size="sm">
+                  <Button variant="ghost" size="sm"
+                  onClick={() => window.open(project.repoLink, "_blank")}
+                  >
                     <Github className="w-4 h-4" />
                   </Button>
                 </div>
