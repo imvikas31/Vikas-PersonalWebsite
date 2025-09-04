@@ -67,13 +67,13 @@ const certifications = [
     date: "Issued July 2023",
     credentialId: "https://drive.google.com/file/d/18hBXqXiv0yHFz8Ro6UIHQIcZLwTUrgI0/view?usp=drive_link"
   },
-  {
-    name: "Data Analysis Using Python",
-    issuer: "IBM",
-    logo: "./src/assets/zscaler_logo.jpeg",
-    date: "Issued July 2023",
-    credentialId: "https://www.credly.com/badges/15730de4-0ac4-4800-a49d-c5897df4fc3a/linked_in_profile"
-  },
+  // {
+  //   name: "Data Analysis Using Python",
+  //   issuer: "IBM",
+  //   logo: "./src/assets/zscaler_logo.jpeg",
+  //   date: "Issued July 2023",
+  //   credentialId: "https://www.credly.com/badges/15730de4-0ac4-4800-a49d-c5897df4fc3a/linked_in_profile"
+  // },
   {
     name: "AWS Academy Machine Learning Foundations",
     issuer: "AWS",
