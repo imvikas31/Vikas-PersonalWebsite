@@ -1,6 +1,9 @@
 import { Building, Calendar, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
-import ibmLogo from "../assets/ibm_logo.jpeg"
+import ibmLogo from "../assets/ibm_logo.jpeg";
+import zscalerLogo from "../assets/zscaler_logo.jpeg";
+import awsLogo from "../assets/amazon_web_services_logo.jpeg";
+import aicteLogo from "../assets/aicte_neat_cell_logo.jpeg";
 
 const experiences = [
   {
@@ -43,28 +46,28 @@ const certifications = [
   {
     name: "Artificial Intelligence Fundamentals",
     issuer: "IBM",
-    logo: "/assets/ibm_logo.jpeg",
+    logo: ibmLogo,
     date: "Issued Dec 2023",
     credentialId: "https://www.credly.com/badges/86d2e16d-2511-4f6a-9cf2-1c468e4a8d02/linked_in_profile"
   },
   {
     name: "AI-ML Virtual internship",
     issuer: "AICTE NEAT",
-    logo:"/assets/aicte_neat_cell_logo.jpeg",
+    logo:aicteLogo,
     date: "Issued July 2023",
     credentialId: "https://drive.google.com/file/d/18Pxmly8FxR1DOjuxl1KthpKXDZ8lm8iw/view?usp=drive_link"
   },
   {
     name: "AWS Academy Cloud Foundations",
     issuer: "AWS",
-    logo: "/assets/amazon_web_services_logo.jpeg",
+    logo: awsLogo,
     date: "Issued July 2023",
     credentialId: "https://www.credly.com/badges/0e490957-8b5f-4087-ba1b-da819da2e505/linked_in_profile"
   },
   {
     name: "Cybersecurity VIrtual Internship Program",
     issuer: "AICTE NEAT",
-    logo: "/assets/aicte_neat_cell_logo.jpeg",
+    logo: aicteLogo,
     date: "Issued July 2023",
     credentialId: "https://drive.google.com/file/d/18hBXqXiv0yHFz8Ro6UIHQIcZLwTUrgI0/view?usp=drive_link"
   },

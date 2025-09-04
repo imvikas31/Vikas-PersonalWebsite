@@ -19,10 +19,10 @@ const projects = [
     id: 2,
     title: "Quiz Master",
     category: "web-app",
-    technologies: ["React.js", "Node.js", "javaScript"],
+    technologies: ["React.js", "Node.js", "JavaScript"],
     duration: "2 week",
     description: "A responsive React-based Quiz App that lets users test their knowledge across multiple topics. Features include interactive questions, score tracking, and smooth navigation between quizzes.",
-    image: "📋",
+    image: "./src/assets/quiz-master.png",
     bgColor: "from-green-500 to-teal-600",
     demoLink:"https://todaypay-quizapp.netlify.app/",
     repoLink:"https://github.com/imvikas31/TodayPay-QuizApp"
@@ -34,21 +34,21 @@ const projects = [
     technologies: ["React.js","JavaScript","Node.js"],
     duration: "6 weeks",
     description: "A2Z Bookshop is a user-friendly web app that allows users to browse, search, and purchase books seamlessly. It offers a streamlined interface with categories, book details, and a secure checkout process.",
-    image: "🌤️",
+    image: "./src/assets/a2z.png",
     bgColor: "from-orange-500 to-red-600",
     demoLink:"https://a2zbookshop.netlify.app/",
     repoLink:"https://github.com/imvikas31/A2Z-BookDekho-website"
   },
-  {
-    id: 4,
-    title: "AI Chat Assistant",
-    category: "web-app",
-    technologies: ["Python", "OpenAI", "FastAPI"],
-    duration: "4 months",
-    description: "Intelligent chatbot powered by machine learning with natural language processing and context-aware conversations.",
-    image: "🤖",
-    bgColor: "from-purple-500 to-pink-600"
-  },
+  // {
+  //   id: 4,
+  //   title: "AI Chat Assistant",
+  //   category: "web-app",
+  //   technologies: ["Python", "OpenAI", "FastAPI"],
+  //   duration: "4 months",
+  //   description: "Intelligent chatbot powered by machine learning with natural language processing and context-aware conversations.",
+  //   image: "🤖",
+  //   bgColor: "from-purple-500 to-pink-600"
+  // },
   {
     id: 5,
     title: "Fitness Tracker",
@@ -56,7 +56,7 @@ const projects = [
     technologies: ["Flutter", "SQLite", "Charts"],
     duration: "8 weeks",
     description: "Comprehensive fitness tracking application with workout plans, progress monitoring, and social sharing features.",
-    image: "💪",
+    image: "./src/assets/finance.png",
     bgColor: "from-cyan-500 to-blue-600"
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     technologies: ["Microservices", "Docker", "AWS"],
     duration: "2 weeks",
     description: "In-depth article series about building scalable web applications using modern architecture patterns and cloud technologies.",
-    image: "📚",
+    image: "./src/assets/web-arch.png",
     bgColor: "from-indigo-500 to-purple-600"
   }
 ];
@@ -75,7 +75,8 @@ const categories = [
   { id: "all", label: "All Projects" },
   { id: "web-app", label: "Web Apps" },
   { id: "android-app", label: "Mobile Apps" },
-  { id: "articles", label: "Articles" }
+  { id: "articles", label: "Articles" },
+  // { id: "proble solving", label: "Problem Solving" }
 ];
 
 const ProjectsSection = () => {
@@ -98,7 +99,7 @@ const ProjectsSection = () => {
           </p>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-2 border-2 border-portfolio-primary rounded-xl p-1 max-w-lg mx-auto">
+          <div className="flex flex-wrap justify-center gap- border-2 border-portfolio-primary rounded-xl p-1 max-w-lg mx-auto">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -124,7 +125,7 @@ const ProjectsSection = () => {
             >
               {/* Project Image/Icon */}
               <div className={`h-48 bg-gradient-to-br ${project.bgColor} flex items-center justify-center text-6xl`}>
-                <img src={project.image} alt="" className="h-[200px] w-[700px]"/>
+                <img src={project.image} alt="" className="h-[200px] w-[750px]"/>
                 
               </div>
 
