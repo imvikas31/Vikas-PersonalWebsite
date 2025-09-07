@@ -81,7 +81,7 @@ const certifications = [
   {
     name: "AWS Academy Machine Learning Foundations",
     issuer: "AWS",
-    logo: "./src/assets/amazon_web_services_logo.jpeg",
+    logo: awsLogo,
     date: "Issued April 2023",
     credentialId: "https://www.credly.com/badges/18b50b30-5d13-4ce3-8c1d-7e7666bfd5de/linked_in_profile"
   },
