@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { ExternalLink, Github, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
+import pastebinImg from "../assets/pastebin.png";
+import quizImg from "../assets/quiz-master.png";
+import a2zImg from "../assets/a2z.png";
+import financeImg from "../assets/finance.png";
+import webArchImg from "../assets/web-arch.png";
+
 
 const projects = [
   {
@@ -10,7 +16,7 @@ const projects = [
     technologies: ["React", "Node.js", "Superbase"],
     duration: "2 weeks",
     description: "A web-based Pastebin application that allows users to create, save, and share text snippets securely. It features a clean interface with easy access to pastes and optional privacy settings.",
-    image: "./src/assets/pastebin.png",
+    image: pastebinImg,
     bgColor: "from-blue-500 to-purple-600",
     demoLink: "https://vikas-pastebin.netlify.app",
     repoLink: "https://github.com/imvikas31/PasteBin"
@@ -22,7 +28,7 @@ const projects = [
     technologies: ["React.js", "Node.js", "JavaScript"],
     duration: "2 week",
     description: "A responsive React-based Quiz App that lets users test their knowledge across multiple topics. Features include interactive questions, score tracking, and smooth navigation between quizzes.",
-    image: "./src/assets/quiz-master.png",
+    image: quizImg,
     bgColor: "from-green-500 to-teal-600",
     demoLink:"https://todaypay-quizapp.netlify.app/",
     repoLink:"https://github.com/imvikas31/TodayPay-QuizApp"
@@ -34,7 +40,7 @@ const projects = [
     technologies: ["React.js","JavaScript","Node.js"],
     duration: "6 weeks",
     description: "A2Z Bookshop is a user-friendly web app that allows users to browse, search, and purchase books seamlessly. It offers a streamlined interface with categories, book details, and a secure checkout process.",
-    image: "./src/assets/a2z.png",
+    image: a2zImg,
     bgColor: "from-orange-500 to-red-600",
     demoLink:"https://a2zbookshop.netlify.app/",
     repoLink:"https://github.com/imvikas31/A2Z-BookDekho-website"
@@ -56,7 +62,7 @@ const projects = [
     technologies: ["Flutter", "SQLite", "Charts"],
     duration: "8 weeks",
     description: "Comprehensive fitness tracking application with workout plans, progress monitoring, and social sharing features.",
-    image: "./src/assets/finance.png",
+    image: financeImg,
     bgColor: "from-cyan-500 to-blue-600"
   },
   {
@@ -66,7 +72,7 @@ const projects = [
     technologies: ["Microservices", "Docker", "AWS"],
     duration: "2 weeks",
     description: "In-depth article series about building scalable web applications using modern architecture patterns and cloud technologies.",
-    image: "./src/assets/web-arch.png",
+    image: webArchImg,
     bgColor: "from-indigo-500 to-purple-600"
   }
 ];
