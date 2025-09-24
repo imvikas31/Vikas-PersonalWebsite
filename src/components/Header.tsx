@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X, Github } from "lucide-react";
 
+import myImage from "../assets/images.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,7 +18,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <div className="flex items-center">
             <h1 className="text-xl md:text-2xl font-semibold text-gray-900">
-              Vikas Singh
+              <img src={myImage} alt="Logo" className="w-32 h-8 object-contain" />
             </h1>
           </div>
         </div>
